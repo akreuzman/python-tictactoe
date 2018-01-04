@@ -19,6 +19,7 @@ class TicTacToe:
     """
     PLAYER_ONE = 0
     PLAYER_TWO = 1
+    NO_WINNER = -1
 
     def __init__(self):
         """Initialize game variables."""        
@@ -78,7 +79,7 @@ class TicTacToe:
         `over`: True if game over, False if not
         """
         winningCombos = [[0,1,2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
-        winner = -1 #no winner
+        winner = TicTacToe.NO_WINNER #no winner
         over = (len(self.allMoves) == 9) #false unless 9 moves made
 
         # Loop through possible winning combinations
@@ -267,11 +268,11 @@ class TicTacToe:
 
         # Print correct winner's message
         time.sleep(0.5)
-        if winner == 0:
+        if winner == TicTacToe.PLAYER_ONE:
             print('Player 1 wins! Congratulations, human!')
-        elif winner == 1:
+        elif winner == TicTacToe.PLAYER_TWO:
             print('Computer wins! Looks like Drew coded this correctly!')
-        elif winner == -1:
+        elif winner == TicTacToe.NO_WINNER:
             print('It\'s a tie!')
 
 
