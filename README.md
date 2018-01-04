@@ -3,7 +3,7 @@
 An unbeatable tic-tac-toe game played in the terminal. Program uses a minimax algorithm to choose moves in response to the player.
 
 ## Requirements:
- - Python 3.x
+ - Python 3.3+
 
 ## To run:
 1. Save `.py` file to your computer.
