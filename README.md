@@ -1,6 +1,6 @@
 # python-tictactoe
 
-An unbeatable tic-tac-toe game played in the terminal. Program uses a minimax algorithm to choose moves in response to the player.
+An unbeatable tic-tac-toe game played in terminal. Program uses a minimax algorithm to choose moves in response to the player.
 
 ## Requirements:
  - Python 3.3+
